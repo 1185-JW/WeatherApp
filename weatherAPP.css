@@ -1,0 +1,196 @@
+body
+{
+    margin : 0;
+    font-family : sans-serif;
+    background-color : lightcyan;
+}                   
+
+.cont
+{
+    /* margin : 20px; */
+    border : 2px solid lightgrey;
+    box-shadow : 1px 1px 2px 3px gray;
+    width : 35%;
+    padding : 30px;
+    border-radius : 10px;
+    background-color : white;
+    background-image : url("sun1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.C1
+{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    padding : 20px;
+}
+
+.H
+{
+    text-align: center;
+    font-size : 41px;
+    color : salmon;
+    animation-name: header;
+    animation-duration : 0.4s; 
+    animation-iteration-count: infinite;
+    animation-direction: normal; 
+}
+
+@keyframes header 
+{
+  0%   {color:red; }
+  25%  {color:yellow; }
+  50%  {color:blue; }
+  75%  {color:green; }
+  100% {color:red; }
+}
+
+.W1
+{
+    display : flex;
+    justify-content :center;
+    gap : 5px;
+    border : 1px solid lightgrey;
+    border : 1px solid transparent;
+    /* width : 60%; */
+    padding : 10px;
+}
+
+.Inp
+{
+    height : 30px;
+    width : 40%;
+    border : 2px solid lightblue;
+    border-radius : 5px;
+    font-size : 17px;
+    padding : 3px;
+
+    animation-name: input;
+    animation-duration : 0.9s; 
+    animation-iteration-count: infinite;
+    animation-direction: normal; 
+}
+
+@keyframes input
+{
+   0%  { border-color:red; }
+  25%  {border-color:yellow; }
+  50%  {border-color:blue; }
+  75%  {border-color:green; }
+  100% {border-color:red; }
+}
+
+.Inp:hover
+{
+    border : 2px solid lightgreen;
+}
+
+.bt
+{
+    padding : 9px;
+    font-size : 15px;
+    color : white;
+    background-color : lightcoral;
+    border-radius : 5px;
+    font-weight : bold;
+
+    animation-name: button1;
+    animation-duration : 3s; 
+    animation-iteration-count: infinite;
+    animation-direction: normal; 
+}
+
+@keyframes button1
+{
+   0%  {background-color:red;    color :white;}
+  25%  {background-color:yellow; color :rgb(131, 213, 228);}
+  50%  {background-color:blue;   color :rgb(40, 213, 243); }
+  75%  {background-color:green;  color :rgb(28, 221, 235); }
+  100% {background-color:red;    color :rgb(6, 212, 248);}
+}
+
+.bt:hover
+{
+    background-color : lightgreen;
+    color : blue;
+}
+
+.W2
+{
+    /* padding : 20px; */
+    /* border : 2px solid green; */
+    text-align :center;
+    display : flex;
+    justify-content : center;
+    flex-direction: column;
+    width : 60%;
+    margin : auto;
+    border-radius : 10px;
+    box-shadow : 1px 1px 4px 4px gray;
+    position: relative;
+    isolation : isolate;
+}
+
+
+.XX
+{
+   isolation : isolate;   
+}
+
+.W2::before
+{
+    content :'';
+    background-image: url("Weather.avif");
+    background-size: cover;
+    position : absolute;
+    inset:0;
+    opacity : 0.2;
+}
+
+
+.Nx
+{
+    padding : 5px;
+    display :flex;
+    justify-content : center;
+    gap : 30px;
+    border : 1px solid transparent;
+    
+}
+
+.N_img
+{
+    padding : 10px;
+    border : 1px solid transparent;
+    border-radius : 10px;
+    box-shadow: 1px 1px 2px 1px gray;
+}
+
+.N_inp
+{
+    display :flex;
+    align-items :center;
+    justify-content : center;
+    font-size : 22px;
+    border : 1px solid transparent;
+    color : orange;
+    padding : 5px;
+    width : 50%;
+}
+
+.parg1
+{
+    font-size : 32px;
+    color : lightcoral;
+    font-weight : bold;
+}
+
+.col1
+{ color : red;}
+
+.col2
+{ color : orange;}
+
+.col3 { color : blue;}
